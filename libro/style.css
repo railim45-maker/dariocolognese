@@ -1,0 +1,101 @@
+/* ==========================================
+   SEZIONE PROJECTS HUB (BUSINESS, PHILOSOPHY, LAB)
+   ========================================== */
+.projects-hub {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.section-subtitle-center {
+    text-align: center;
+    max-width: 700px;
+    margin: -30px auto 50px auto;
+    font-size: 18px;
+    color: var(--text-dark);
+}
+
+.hub-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    align-items: start;
+}
+
+.hub-category-card {
+    background: var(--primary-light);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(78, 116, 91, 0.08);
+}
+
+.category-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid rgba(78, 116, 91, 0.15);
+    padding-bottom: 15px;
+}
+
+.category-icon {
+    font-size: 28px;
+}
+
+.category-header h3 {
+    font-size: 22px;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.project-links-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-link-item {
+    display: block;
+    text-decoration: none;
+    color: var(--text-dark);
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: all 0.25s ease;
+}
+
+.project-link-item:hover {
+    border-color: var(--primary-color);
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(78, 116, 91, 0.08);
+}
+
+.project-link-item strong {
+    display: block;
+    font-size: 16px;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+    transition: color 0.2s;
+}
+
+.project-link-item:hover strong {
+    color: #3d5b47; /* Sfumatura scura al passaggio del mouse */
+}
+
+.project-link-item p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #4a5568; /* Grigio leggermente più morbido per la descrizione */
+}
+
+/* RESPONSIVE AGGIUNTIVO */
+@media (max-width: 768px) {
+    .hub-grid {
+        grid-template-columns: 1fr;
+    }
+    .project-link-item:hover {
+        transform: none; /* Disabilita lo spostamento laterale sui touch screen */
+    }
+}
